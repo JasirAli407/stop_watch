@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: monospace;
+    background-color: #142352;
+    background-color: #9b3742;
+    background-color: #b87a35;
+    background: linear-gradient(90deg, #142352, #9b3742);
+    color: white;
+
+}
+
+
+#stopwatch {
+     
+    height: 250px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin: auto;
+    position: relative;
+    top: 100px;
+
+    border-radius: 50%;
+    border: 1px solid white;
+    /* background-color: black;
+    background-color: #b87a35; */
+    background-color: #9b3742;
+    /* background-color:#142352; */
+}
+
+.stopwatch-display {
+    font-size: 36px;
+   
+}
+
+.controls {
+    position: relative;
+    top: 45px;
+    display: flex;
+    width: 40%;
+    height: 40px;
+    justify-content: space-between;
+    font-size: 18px;
+    color: white;
+
+
+}
+
+.icon-btn {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d45866;
+    background-color: #733147;
+    border-width: 1px;
+    /* border-style: solid; */
+    border-color: aliceblue;
+
+    border-radius: 50%;
+}
+
+
+
+#start-pause-btn {
+    position: relative;
+}
+
+#pause-btn {
+    display: none;
+    position: absolute;
+    top: 0;
+}
+
+
+
+
+#extra-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 110px;
+}
+
+.btn {
+
+    height: max-content;
+    width: max-content;
+    padding: 10px;
+    border: 1px solid #733147;
+    margin-left: 5px;
+    border-radius: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff3d9;
+    background-color: #9b3742;
+}
+
+ul{
+    margin: auto;
+    margin-top: 15px;
+    height: 25vh;
+   width: 200px;
+    font-size: 20px;
+    font-family: serif;
+    color: #fff3d9;
+    overflow-y: auto;
+}
+ul::-webkit-scrollbar{
+    display: none;
+}
+
+ul li {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 3px;
+        
+}
+
+#laps-container li i{
+    font-size: 15px;
+    line-height: 25px;
+}
+
+
+

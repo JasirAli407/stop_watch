@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/4aa4b56328.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="stopwatch">
+
+
+        <div class="stopwatch-display">00:00:00:00</div>
+
+        <div class="controls">
+
+            <div id="start-pause-btn">
+                <div id="start-btn" class="icon-btn" onclick="start()"><i class="fa-solid fa-play"></i>
+                </div>
+                <div class="icon-btn" id="pause-btn" onclick="pause()">
+                    <i class="fa-solid fa-pause"></i>
+                </div>
+
+            </div>
+
+            <div class="icon-btn" onclick="reset()"><i class="fa-solid fa-arrow-rotate-right"></i></div>
+
+        </div>
+
+    </div>
+     
+    
+    <div id="extra-controls">
+
+        <div class="btn" onclick="restart()">Restart</div>
+
+        <div class="btn" onclick="showLapTime()">Lap</div>
+        <div class="btn" onclick="lapReset()">Reset Lap</div>
+    </div>
+
+    <!-- lap time list  container -->
+
+    <ul id="laps-container"></ul>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
